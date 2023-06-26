@@ -1,0 +1,99 @@
+body,
+body * {
+
+  /*font-family: sans-serif;*/
+  margin: unset;
+  box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+.container {
+  width: 1000px;
+  margin: 350px auto 0;
+  display: table;
+  box-sizing: border-box;
+  transition: .5s;
+
+}
+
+.row{
+
+  margin: 20px 0;
+  transition: .5s;
+  row-gap: 150px;
+
+}
+
+.column {
+  background: #000;
+  display: table-cell;
+  padding: 10px;
+  width: 33.33333%;
+  text-align: left;
+  color: #000;
+  vertical-align: middle;
+  border-right: 10px solid #fff;
+  border-left: 10px solid #fff;
+  transition: .5s;
+  border-radius: 5px;
+
+}
+
+.row:nth-child(1) .column:nth-child(1) {
+  background: #FDFFFF;
+}
+.row:nth-child(1) .column:nth-child(2) {
+  background: #FDFFFF;
+}
+.row:nth-child(1) .column:nth-child(3) {
+  background: #FDFFFF;
+}
+.row:nth-child(2) .column:nth-child(1) {
+  background: #FDFFFF;
+}
+.row:nth-child(2) .column:nth-child(2) {
+  background: #FDFFFF;
+}
+.row:nth-child(2) .column:nth-child(3) {
+  background: #FDFFFF;
+}
+.row:nth-child(3) .column:nth-child(1) {
+  background: #FDFFFF;
+}
+.row:nth-child(3) .column:nth-child(2) {
+  background: #FDFFFF;
+}
+.row:nth-child(3) .column:nth-child(3) {
+  background: #FDFFFF;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    margin-top: 350px;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+    border: none;
+    box-sizing: border-box;
+  }
+  .row {
+    margin: 0;
+  }
+
+  .head-header,
+  .head-p {
+    padding: 10px 0;
+    margin: 50px;
+    margin-top: 10px;
+    height: 70px;
+  }
+}
